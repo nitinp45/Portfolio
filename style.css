@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body{
+  display:grid;
+  width: fit-content;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(218, 231, 242);
+  grid-area: navbar;
+}
+.navbar h1{
+    margin: 15px;
+    font-size: 50px;
+    color: deeppink;
+    display: inline;
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.navbar ul {
+  display: flex;
+  float: right;
+}
+
+.navbar li {
+  text-align: center;
+  list-style-type: none;
+  padding: 20px; 
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(218, 231, 242);
+}
+a:hover {
+  color: rgb(94, 16, 162);
+}
+
+section {
+  background-color: white;
+  height: 800px;
+  width: auto;
+  display: grid ;
+}
+
+section img {
+  padding-top: 100px;
+  justify-content: center;
+  padding-left: 400px;
+}
+
+section h1 {
+  padding-top: 50px;
+  color: rgb(12, 1, 1);
+  letter-spacing: 2px;
+  font-size: 50px;
+  text-align: center;
+}
+
+section h2 {
+  color: rgb(1, 1, 15);
+  letter-spacing: 3px;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+section h1 strong {
+  color: rgb(12, 39, 244);
+}
+
+.box {
+  height: 10vh;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.box h1 {
+  font-size: 40px;
+  align-items: center;
+}
+
+.box h1 strong {
+  font-size: 50px;
+  color: blueviolet;
+}
+
+main {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.card {
+  border: 1px black;
+  border-radius: 20px;
+  max-width: 300px;
+  height: 300px;
+  margin: 50px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+}
+
+.card h1 strong {
+  font-size: 60px;
+}
+
+.container h3 {
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.container1 h3 {
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.container2 h3 {
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.card p {
+  letter-spacing: 0.5px;
+  padding-top: 8px;
+  margin: 10px;
+}
+
+.card img {
+  height: 150px;
+  width: 298.8px;
+  border-radius: 20px;
+}
+
+.section {
+  height: 60vh;
+  display: grid;
+  width: 1000px;
+  margin: 50px;
+  margin-left: 250px;
+  
+}
+
+.about {
+  background-color: rgb(245, 248, 249);
+  background-color: aliceblue;
+  border-radius: 8px black;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 20px;
+}
+.about h1 {
+  font-size: 40px;
+  margin: 40px;
+  padding-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.about p {
+  font-size: 20px;
+  margin: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+footer{
+  width: 100%;
+}
+.container4 {
+  border-radius: 5px;
+  background-color: rgb(21, 14, 79);
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-top: 30px;
+  color: white;
+
+}
+
+.container4 input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.container4 h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.container4 #sub {
+  width: 100px;
+  background-color: #6166f0;
+}
+
+.social {
+  text-decoration: none;
+  overflow: hidden;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+a {
+  color: rgb(99, 33, 97);
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+  line-height: 50px;
+  background-color: rgb(239, 240, 243);
+}
+
+#sub:hover {
+  background-color: rgb(242, 242, 246);
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  body {
+    box-sizing: border-box;
+    height: auto;
+    width: fit-content;
+  }
+  .navbar {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .navbar li{
+    padding: 5px;
+    float: right;
+
+  }
+  .navbar h1{
+    padding: 5px;
+    font-size: 30px;
+    color: deeppink;
+    display: inline;
+}
+  section {
+    width: fit-content;
+    height: auto;
+  }
+  section img {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  section h1{
+    font-size: 40px;
+  }
+  section h2
+  {
+    font-size: 30px;
+  }
+  .box {
+    margin-top: 30px;
+    height: 70px;
+    text-align: center;
+  }
+  .box h1{
+    font-size: 25px;
+
+  }
+  .box strong h1{
+    font-size: 30px;
+  }
+  main {
+    height: auto;
+    width: 100%;
+  }
+  .card{
+    width: fit-content;
+    height: auto;
+  }
+  .section {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+  }
+  .container4 {
+    height: auto;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    font-size: 15px;
+  }
+  .container4 input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+  }
+}
